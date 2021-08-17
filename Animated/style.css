@@ -122,7 +122,7 @@ body
     height: 120px;
     background: #fff;
     border-radius: 50%;
-    animation: animate 10s; linear infinite;
+    animation: animate 5s linear infinite;
     opacity: 0;
     filter: blur(10px);
     animation-delay: calc(var(--i)*-0.10s);
