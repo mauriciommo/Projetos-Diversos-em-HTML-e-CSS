@@ -1,0 +1,36 @@
+*
+{
+    padding: 0px;
+    margin: 2px;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+body
+{
+    font-family: arial;
+}
+ul
+{
+    list-style: none;
+}
+img
+{
+    width: 40px;
+}
+input[type="checkbox"]
+{
+    display: none;
+}
+nav
+{
+    background-color: rgba(16,16,16,.5);
+    width: 350px;
+    height: 100%;
+}
+a
+{
+    background-color: red;
+}
