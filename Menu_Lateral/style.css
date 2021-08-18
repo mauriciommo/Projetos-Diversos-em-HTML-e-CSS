@@ -1,7 +1,7 @@
 *
 {
     padding: 0px;
-    margin: 2px;
+    margin: 0.1px;
 }
 a
 {
@@ -11,6 +11,8 @@ a
 body
 {
     font-family: arial;
+    background: url("DSCF3135.JPG");
+    background-size: 100%;
 }
 ul
 {
@@ -18,7 +20,7 @@ ul
 }
 img
 {
-    width: 40px;
+    width: 30px;
 }
 input[type="checkbox"]
 {
@@ -29,8 +31,37 @@ nav
     background-color: rgba(16,16,16,.5);
     width: 350px;
     height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+
+input[type="checkbox"]:checked ~ nav
+{
+    transform: translateX(350px);
+}
+
+ul
+{
+    top: 40px;
+    position: absolute;
+    width: 100%;
 }
 a
 {
-    background-color: red;
+    display: block;
+    padding: 20px 5px;
+    color: white;
+    font-weight: 600;
+}
+a:hover
+{
+    background-color: rgba(176,224,230);
+    color: blue
+}
+label
+{
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
 }
