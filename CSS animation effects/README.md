@@ -1,2 +1,1 @@
-# Projetos Diversos em HTML e CSS
- Exercícios e experimentos em HTML e CSS
+Projeto elaborado utilizando-se o tutorial: https://www.youtube.com/watch?v=Xrx9v6DhzDo
