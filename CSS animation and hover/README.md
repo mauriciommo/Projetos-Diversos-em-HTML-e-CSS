@@ -1,1 +1,1 @@
-Projeto elaborado utilizando-se o tutorial: https://www.youtube.com/watch?v=Xrx9v6DhzDo
+Projeto elaborado utilizando-se do seguinte tutorial: https://www.youtube.com/watch?v=qXj-KdVtPRA
