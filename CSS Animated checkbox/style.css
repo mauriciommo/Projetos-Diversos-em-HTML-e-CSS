@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    padding: 0;;
+    padding: 0;
 }
 .center
 {
@@ -22,7 +22,7 @@ input[type="checkbox"]
     outline: none;
     transition: .5s;
 }
-input[type="checkbox"]::before
+input[type="checkbox"]:before
 {
     content: '';
     position: absolute;
@@ -34,14 +34,14 @@ input[type="checkbox"]::before
     box-sizing: border-box;
     transition: .5s;
 }
-input[type="checkbox"]::before
+input:checked[type="checkbox"]:before
 {
-    
-
+    border-left: none;
+    border-top: none;
+    width: 20px;
+    border-color: #0f0;
+    transform: rotate(405deg) translate(5px, -10px);
 }
-
-
-
 label
 {
     font-size: 36px;
