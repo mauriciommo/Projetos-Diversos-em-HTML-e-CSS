@@ -12,22 +12,34 @@
         <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
-                <button type="button" class="togler-btn"> Login </button>
-                <button type="button" class="togler-btn"> Cadastro </button>
+                <button type="button" class="togler-btn" onclick="login()">Login</button>
+                <button type="button" class="togler-btn" onclick="cadastro()">Cadastro</button>
             </div>
-            <form class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span>Remember Password</span>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Usuário" required>
+                <input type="text" class="input-field" placeholder="Senha" required>
+                <input type="checkbox" class="check-box"><span>Salvar Senha</span>
                 <button type="submit" class="submit-btn">Login</button>
-
-
-
-
+            </form>
+            <form id="cadastro" class="input-group">
+                <input type="text" class="input-field" placeholder="Usuário" required>
+                <input type="e-mail" class="input-field" placeholder="E-mail" required>
+                <input type="text" class="input-field" placeholder="Senha" required>
+                <input type="checkbox" class="check-box"><span>Concordo com os Termos e Condições</span>
+                <button type="submit" class="submit-btn">Cadastrar</button>
             </form>
         </div>
 
     </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("cadastro");
+        var z = document.getElementById("btn");
+
+
+
+    </script>
     
 </body>
 </html>
