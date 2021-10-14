@@ -58,3 +58,19 @@
     color: #fff;
     font-size: 42px;
 }
+/*-----------ABOUT-------------*/
+#about
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #555;
+}
+#about button
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.about-content
+{
+    padding-top: 20px;
+}
