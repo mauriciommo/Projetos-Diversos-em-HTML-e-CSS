@@ -105,3 +105,12 @@
     color: #efefef !important;
     padding-bottom: 10px;
 }
+#services h1::after
+{
+    content: '';
+    background: #efefef;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
