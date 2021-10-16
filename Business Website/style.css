@@ -58,7 +58,7 @@
     color: #fff;
     font-size: 42px;
 }
-/*-----------ABOUT-------------*/
+/*--------------ABOUT-------------*/
 #about
 {
     padding-top: 50px;
@@ -73,4 +73,35 @@
 .about-content
 {
     padding-top: 20px;
+}
+.skills-bar p
+{
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress-bar
+{
+    border-radius: 16px;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 20px;
+}
+/*--------------SERVICES--------------*/
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.8)),rgba(0,0,0,0.8));
+    background-size: cover;
+    background-position: center;
+    color: #efefef !important;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#services h1
+{
+    text-align: center;
+    color: #efefef !important;
+    padding-bottom: 10px;
 }
