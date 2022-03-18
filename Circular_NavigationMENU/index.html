@@ -19,6 +19,10 @@
         <li style="--i:6;"><a href="#"><ion-icon name="game-controller-outline"></ion-icon></a></li>
         <li style="--i:7;"><a href="#"><ion-icon name="camera-outline"></ion-icon></a></li>
 
+        <div class="indicator">
+            
+        </div>
+
     </ul>
 
     <script>
@@ -31,9 +35,10 @@
 
         const list = document.querySelectorAll('li');
         function activeLink() {
-            list.forEach((item) => item.classList.remove(active));
+            list.forEach((item) => item.classList.remove('active'));
             this.classList.add('active')
         }
+        list.forEach((item) => item.addEventListener('click', activeLink))
     </script>
 
 
