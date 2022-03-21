@@ -19,11 +19,13 @@ body {
     position: relative;
     display: flex;
     justify-content: center;
+    background-color: #514C9CFF;
 }
 
 img {
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
 
 .content {
@@ -46,7 +48,7 @@ p {
     max-width: 900px;
     margin: auto;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
     opacity: 0.7;
 }
 
@@ -55,11 +57,12 @@ p {
 }
 
 .layer-3 h1 {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .layer-3 p {
-    max-width: 600px;
+    width: 600px;
+    max-width: 76vw;
     text-indent: 0;
     text-align: center;
     font-size: 14px;
@@ -78,4 +81,19 @@ p {
     text-decoration: none;
     font-weight: bold;
     color: #514c9c;
+}
+
+@media (orientation: portrait) {
+    .banner {
+        height: 95vh;
+    }
+    .layer-1 {
+        bottom: 9vw;
+    }
+    .layer-4 {
+        bottom: 6vw;
+    }
+    .layer-5 {
+        bottom: 3vw;
+    }
 }
