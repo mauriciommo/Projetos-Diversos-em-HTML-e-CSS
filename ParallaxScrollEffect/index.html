@@ -9,25 +9,46 @@
 </head>
 <body>
     <div class="banner">
-        <img src="img/background.png">
-        <img src="img/meteor.png">
+        <img class="layer-1" src="img/background.png">
+        <img class="layer-2" src="img/meteor.png">
 
         <div class="layer-3">
             <h1>Hello &amp; Welcome</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nostrum. Dolores mollitia delectus numquam ea quam labore quibusdam reprehenderit! Blanditiis error, accusantium veritatis quidem voluptas soluta fugit quo dicta suscipit.</p>
-            <a href="">Get Started</a>
+            <a href="#teks">Get Started</a>
         </div>
 
-        <img src="img/4.png">
-        <img src="img/5.png">
+        <img class="layer-4" src="img/4.png">
+        <img class="layer-5" src="img/5.png">
         <img src="img/6.png">
     </div>
-    <div class="content">
+    <div class="content" id="teks">
         <h1>Parallax</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum aliquam vitae vel quaerat minus quasi nesciunt veniam quos nobis, ut necessitatibus laborum cumque porro ipsam doloribus eos accusantium dolor et hic consequatur culpa pariatur corrupti sapiente molestiae? A nam, voluptatum molestias quos ad quam nisi fugiat asperiores sunt id nostrum quibusdam fugit corrupti! Odit cum ipsum ex? Aperiam autem saepe explicabo repellendus veniam accusantium adipisci rem deserunt quis numquam, maiores assumenda possimus quam, corporis maxime nobis laboriosam sint tenetur nostrum modi? Rem exercitationem reprehenderit autem, distinctio magni dignissimos eveniet impedit.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, maxime eligendi. Dignissimos dolore optio, fugit temporibus, velit deserunt dolorem, in eaque praesentium voluptates quibusdam id distinctio neque pariatur quos! Architecto ducimus, assumenda, eveniet odit inventore consectetur molestias quas qui modi quam enim quaerat, omnis soluta et laboriosam! A omnis veniam minus ratione dolores, culpa maxime quas nesciunt fugiat beatae illum officia alias nostrum aut incidunt? Ratione qui soluta nam vitae sequi nisi quam quidem doloremque porro deserunt. Modi esse delectus ipsum aspernatur dignissimos provident aperiam laborum, quia perferendis saepe totam dolore ullam. Excepturi impedit quos, at ea odit sequi vitae. Explicabo fugit recusandae accusamus facilis omnis, ex quo nemo ipsa aspernatur fugiat sed possimus eos ducimus consequatur quas, aperiam dignissimos.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam impedit nesciunt officia itaque similique in saepe recusandae! Sint, accusantium laudantium! Nesciunt facilis cupiditate temporibus reprehenderit minima quos vitae, cumque consectetur dicta, ipsum aspernatur culpa! Numquam id minima ad ab, voluptates, veniam illo mollitia nemo dolor alias, amet nisi optio error est sint nesciunt quos eos. Accusantium excepturi inventore dolor cumque. Quibusdam, tenetur dolorem ducimus eligendi corrupti repellendus autem. Aspernatur enim ut sed ipsum error fuga id esse dolor tempora. Rem.</p>
     </div>
+
+<script type="text/javascript">
+
+    let layer_1 = document.querySelector('.layer-1');
+    let layer_2 = document.querySelector('.layer-2');
+    let layer_3 = document.querySelector('.layer-3');
+    let layer_4 = document.querySelector('.layer-4');
+    let layer_5 = document.querySelector('.layer-5');
+
+    window.onscroll = function() {
+        let Y = window.scrollY;
+
+        layer_1.style.transform = 'translateY('+ Y/1.5 +'px)';
+        layer_2.style.transform = 'translateY('+ Y/2 +'px)';
+        layer_3.style.transform = 'translateY('+ Y/1.5 +'px)';
+        layer_4.style.transform = 'translateY('+ Y/2 +'px)';
+        layer_5.style.transform = 'translateY('+ Y/3 +'px)';
+    }
+
+
+</script>
     
 </body>
 </html>
