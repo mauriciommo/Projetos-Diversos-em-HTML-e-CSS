@@ -52,5 +52,30 @@ body {
     background: transparent;
     border-radius: 34px;
     transition: background 0.5s, width 0.5s;
+    transition-delay: 0.5s, 0s;
     border: 2px solid #03a9f4;
+    box-sizing: border-box;
+}
+
+.container ul li:hover::before {
+    width: 100%;
+    background: #03a9f4;
+    transition-delay: 0s, 0.5s;
+}
+
+.container ul li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+}
+
+.container ul li p {
+    position: relative;
+    z-index: 10;
+    padding: 5px 10px;
+    color: #fff;
 }
